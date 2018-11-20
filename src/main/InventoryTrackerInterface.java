@@ -23,5 +23,19 @@ public class InventoryTrackerInterface {
 
         // Make assertions on Inventory
         assert catalogue.getTotalNumberOfItems() == 0;
+
+        catalogue.addItem(mango);
+
+        System.out.printf("Number of Items: %d", catalogue.getTotalNumberOfItems());
+
+        assert catalogue.getTotalNumberOfItems() == 1;
+
+        Item theMango = catalogue.getItem(0);
+
+        // Make some assertions
+        assert theMango.getName().equals("mango");
+        assert theMango.getQuantity() == 1;
+        assert theMango.getPrice() == 3.78;
+        assert theMango.getUPC().equals("0987654321");
     }
 }
