@@ -16,7 +16,12 @@ public class InventoryTrackerInterface {
         assert mango.getPrice() == 3.78;
         assert mango.getUPC().equals("0987654321");
 
-        // Should create without proper constrcutor
-//        Item theVoid = new Item();
+        // Testing the Inventory class
+        Inventory catalogue = new Inventory();
+
+        System.out.printf("Number of Items: %d", catalogue.getTotalNumberOfItems());
+
+        // Make assertions on Inventory
+        assert catalogue.getTotalNumberOfItems() == 0;
     }
 }
