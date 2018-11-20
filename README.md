@@ -4,7 +4,8 @@
 ## Milestone 1
 * Create the InventoryTrackerInterface class (5pts)
 Create the shell of the InventoryTrackerInterface class and add the main method, but don't fill anything in yet.
-[Git Branch: Milestone 1](https://github.com/MJBlack23/InventoryTracker/tree/Milestone-1)
+
+    [Git Branch: Milestone 1](https://github.com/MJBlack23/InventoryTracker/tree/Milestone-1)
 
 ## Milestone 2
 * Create the Item class and fill in the code (10pts)
@@ -19,6 +20,8 @@ Create the shell of the InventoryTrackerInterface class and add the main method,
     * getQuantity(): int
     * getPrice(): double
     * getUPC(): String
+ 
+    [Git Branch: Milestone 2](https://github.com/MJBlack23/InventoryTracker/tree/Milestone-2)
 
  ## Milestone 3
  * Create the Inventory class, its attributes, and the getTotalNumberOfItems() method (5pts)
