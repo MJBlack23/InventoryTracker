@@ -26,11 +26,13 @@ Create the shell of the InventoryTrackerInterface class and add the main method,
  ## Milestone 3
  * Create the Inventory class, its attributes, and the getTotalNumberOfItems() method (5pts)
  Create inventory class and attributes(properties), create the getTotalNumberOfItems() method
+ [Git Branch: Milestone 3](https://github.com/MJBlack23/InventoryTracker/tree/Milestone-3)
  
  ## Milestone 4
  * Create methods getItem() and addItem (20pts)
  Make sure to add error handling to getItem to account for index requests out of bounds. Additem should take an instance 
  of an Item called newItem, should also update totalItems.
+ [Git Branch: Milestone 4](https://github.com/MJBlack23/InventoryTracker/tree/Milestone-4)
  
  ## Milestone 5
  * Create saveInventoryToFile and loadInventoryFromFile (20pts)
