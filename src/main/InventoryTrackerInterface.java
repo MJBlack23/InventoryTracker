@@ -54,10 +54,12 @@ public class InventoryTrackerInterface {
             case 3:
                 this.catalogue.saveInventoryToFile();
                 System.out.println("Inventory saved to inventoryOutFile.csv");
+                this.promptToContinue();
                 break;
             case 4:
                 this.catalogue.loadInventoryFromFile();
                 System.out.println("Inventory loaded from inventoryInFile.csv");
+                this.promptToContinue();
                 break;
             case 5:
                 this.handleExit();
@@ -131,6 +133,8 @@ public class InventoryTrackerInterface {
             this.printItem(item);
         } else {
             System.out.println("No item with that index exists.");
+
+            this.promptToContinue();
         }
     }
 
@@ -144,6 +148,10 @@ public class InventoryTrackerInterface {
         System.out.println("  Quantity: " + item.getQuantity());
         System.out.println("  UPC: " + item.getUPC());
 
+        this.promptToContinue();
+    }
+
+    private void promptToContinue() {
         System.out.print(" Press 1 to continue... ");
         int x = this.scnr.hasNext() ? this.scnr.nextInt() : -1;
     }
