@@ -19,14 +19,14 @@ public class InventoryTrackerInterface {
         // Testing the Inventory class
         Inventory catalogue = new Inventory();
 
-        System.out.printf("Number of Items: %d", catalogue.getTotalNumberOfItems());
+        System.out.printf("Number of Items: %d\n", catalogue.getTotalNumberOfItems());
 
         // Make assertions on Inventory
         assert catalogue.getTotalNumberOfItems() == 0;
 
         catalogue.addItem(mango);
 
-        System.out.printf("Number of Items: %d", catalogue.getTotalNumberOfItems());
+        System.out.printf("Number of Items: %d\n", catalogue.getTotalNumberOfItems());
 
         assert catalogue.getTotalNumberOfItems() == 1;
 
@@ -37,5 +37,13 @@ public class InventoryTrackerInterface {
         assert theMango.getQuantity() == 1;
         assert theMango.getPrice() == 3.78;
         assert theMango.getUPC().equals("0987654321");
+
+        catalogue.saveInventoryToFile();
+
+        catalogue.loadInventoryFromFile();
+
+        assert catalogue.getTotalNumberOfItems() == 3;
+
+        System.out.printf("Total Items after import: %d", catalogue.getTotalNumberOfItems());
     }
 }
