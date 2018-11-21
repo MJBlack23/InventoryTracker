@@ -38,12 +38,5 @@ public class InventoryTrackerInterface {
         assert theMango.getPrice() == 3.78;
         assert theMango.getUPC().equals("0987654321");
 
-        catalogue.saveInventoryToFile();
-
-        catalogue.loadInventoryFromFile();
-
-        assert catalogue.getTotalNumberOfItems() == 3;
-
-        System.out.printf("Total Items after import: %d", catalogue.getTotalNumberOfItems());
     }
 }
