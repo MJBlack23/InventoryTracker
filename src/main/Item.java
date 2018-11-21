@@ -9,8 +9,18 @@ public class Item {
     private double price;
     private String upc;
 
-//    private Item() {}
+    /**
+     * Blank private constructor to prevent creation without params
+     */
+    private Item() {}
 
+    /**
+     * The actual constructor
+     * @param name
+     * @param quantity
+     * @param price
+     * @param upc
+     */
     public Item(String name, int quantity, double price, String upc) {
         this.name = name;
         this.quantity = quantity;
